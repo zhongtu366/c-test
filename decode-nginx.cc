@@ -10,9 +10,6 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 
-	char buffer[2048];  
-	char realstr[2048]; 
-
 	ifstream infile (argv[1]);  
 	ofstream outfile(argv[2]);  
 
@@ -30,6 +27,10 @@ int main(int argc, char *argv[])
 	char * start = NULL;
 	char * paend = NULL;
 	char * end = NULL;
+	
+	char buffer[2048];  
+	char realstr[2048]; 
+	
 	while( infile.getline(buffer, 2048) )
 	{    
 		start = NULL;
