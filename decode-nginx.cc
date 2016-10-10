@@ -1,8 +1,4 @@
-#include <iostream>  
-#include <iomanip>  
-#include <fstream>  
-#include <cstring>
-#include "base64.h"
+#include "decode-nginx.h"
 
 using namespace std;  
 
@@ -80,8 +76,9 @@ int main(int argc, char *argv[])
 			memset(buffer, 0, 2048);
 		}
 	}
-	infile.close();  
 
+	infile.close();  
 	outfile.close();  
+
 	return 0;  
 }  
